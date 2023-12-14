@@ -20,14 +20,14 @@ class socialLayout extends StatelessWidget {
           builder: (BuildContext context , AppState state){
             AppCubit cubit = AppCubit.get(context);
             return Scaffold(
-              appBar: AppBar(title: Text(cubit.title[cubit.currentIndex]),
+              appBar: AppBar(title: Text(cubit.title[cubit.currentIndex] , style: TextStyle(color: Colors.black),),elevation: 0,
                 actions: [
-                  IconButton(onPressed: (){}, icon: Icon(Icons.notifications)),
-                  IconButton(onPressed: (){}, icon: Icon(Icons.search)),
+                  IconButton(onPressed: (){}, icon: Icon(Icons.notifications) , color: Colors.black,),
+                  IconButton(onPressed: (){}, icon: Icon(Icons.search), color: Colors.black),
                   IconButton(onPressed: (){
                     navigateTo(context, addPost());
                   },
-                      icon: Icon(Icons.post_add)),
+                      icon: Icon(Icons.post_add), color: Colors.black),
                 ],
               ),
 

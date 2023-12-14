@@ -22,7 +22,6 @@ class addPost extends StatelessWidget {
   Widget build(BuildContext context) {
 
     var postController = TextEditingController();
-
     return BlocProvider(
       create: (BuildContext)=>AppCubit(),
       child: BlocConsumer<AppCubit , AppState>(
@@ -30,8 +29,9 @@ class addPost extends StatelessWidget {
           builder: (BuildContext context ,AppState state){
             return Scaffold(
               appBar: AppBar(
+                iconTheme: IconThemeData(color: Colors.black),
                 titleSpacing: 0,
-                title: Text('Create Post'),
+                title: Text('Create Post' , style: TextStyle(color: Colors.black),),
                 actions: [
                   TextButton(onPressed: (){
                     if(AppCubit.get(context).postImage == null) {
@@ -63,7 +63,7 @@ class addPost extends StatelessWidget {
                   },
                     child: Text('Post',
                       style: TextStyle(
-                        color: Colors.tealAccent,
+                        color: Colors.black,
                       ),
                     ),
                   ),

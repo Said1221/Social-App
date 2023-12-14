@@ -41,6 +41,7 @@ class chatting extends StatelessWidget {
             builder: (BuildContext context , AppSatet){
               return Scaffold(
                   appBar: AppBar(
+                    iconTheme: IconThemeData(color: Colors.black),
                     titleSpacing: 0,
                     title : Row(
                       children: [
@@ -56,6 +57,7 @@ class chatting extends StatelessWidget {
                             Text('${userModel.name}',
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
+                                color: Colors.black
                               ),
                             ),
                           ],

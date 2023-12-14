@@ -45,7 +45,8 @@ class editScreen extends StatelessWidget {
 
           return Scaffold(
             appBar: AppBar(
-              title: Text('Edit Profile'),
+              iconTheme: IconThemeData(color: Colors.black),
+              title: Text('Edit Profile' , style: TextStyle(color: Colors.black),),
               titleSpacing: 0,
               actions: [
                 TextButton(onPressed: () {
@@ -61,7 +62,7 @@ class editScreen extends StatelessWidget {
                 },
                   child: Text('Update',
                     style: TextStyle(
-                        color: Colors.tealAccent
+                        color: Colors.black
                     ),
                   ),
                 ),
