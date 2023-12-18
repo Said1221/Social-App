@@ -46,21 +46,21 @@ class socialLayout extends StatelessWidget {
                 items: [
                   BottomNavigationBarItem(
                     icon: Icon(
-                      Icons.home,
+                      Icons.home_outlined,
                     ),
                     label: 'Home',
                   ),
 
                   BottomNavigationBarItem(
-                    icon: Icon(
-                      Icons.chat,
+                    icon: Image.asset(
+                      'assets/chat.png',scale: 25,
                     ),
                     label: 'Chats',
                   ),
 
                   BottomNavigationBarItem(
-                    icon: Icon(
-                      Icons.supervised_user_circle,
+                    icon: Image.asset(
+                      'assets/group.png',scale: 25,
                     ),
                     label: 'Users',
                   ),
@@ -68,7 +68,7 @@ class socialLayout extends StatelessWidget {
 
                   BottomNavigationBarItem(
                     icon: Icon(
-                      Icons.settings,
+                      Icons.settings_outlined,
                     ),
                     label: 'Setting',
                   ),

@@ -87,6 +87,7 @@ flutter:
   assets:
     - assets/like.png
     - assets/chat.png
+    - assets/group.png
 
 
 
